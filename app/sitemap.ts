@@ -2,6 +2,8 @@ import type { MetadataRoute } from 'next'
 import { getAllPosts } from '@/lib/blog'
 import { getAllAuthors } from '@/lib/authors'
 
+export const dynamic = 'force-static'
+
 const BASE_URL = 'https://icesume.com.ng'
 
 export default function sitemap(): MetadataRoute.Sitemap {
