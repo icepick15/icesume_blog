@@ -1,26 +1,15 @@
 import type { Metadata } from 'next'
 import { getAllPosts } from '@/lib/blog'
-import BlogCard from '@/components/BlogCard'
+import BlogList from '@/components/BlogList'
 
 export const metadata: Metadata = {
   title: 'Blog — Career & Finance Articles for Nigerians',
-  description: 'Expert articles on career development, personal finance, scholarships, and remote work — written specifically for Nigerians and Africans.',
+  description:
+    'Expert articles on career development, personal finance, scholarships, and remote work — written specifically for Nigerians and Africans.',
 }
 
-const CATEGORIES = ['All', 'Career', 'Finance', 'Scholarships', 'Remote Work', 'Business']
-
-interface BlogPageProps {
-  searchParams: Promise<{ category?: string }>
-}
-
-export default async function BlogPage({ searchParams }: BlogPageProps) {
-  const { category } = await searchParams
-  const allPosts = getAllPosts()
-
-  const filtered =
-    category && category !== 'All'
-      ? allPosts.filter((p) => p.category.toLowerCase() === category.toLowerCase())
-      : allPosts
+export default function BlogPage() {
+  const posts = getAllPosts()
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
@@ -33,41 +22,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
         </p>
       </div>
 
-      {/* Category Filter */}
-      <div className="flex flex-wrap gap-2 mb-10">
-        {CATEGORIES.map((cat) => {
-          const active = (!category && cat === 'All') || category === cat
-          return (
-            <a
-              key={cat}
-              href={cat === 'All' ? '/blog' : `/blog?category=${cat}`}
-              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
-                active
-                  ? 'bg-green-700 text-white'
-                  : 'bg-white border border-gray-200 text-gray-600 hover:border-green-400 hover:text-green-700'
-              }`}
-            >
-              {cat}
-            </a>
-          )
-        })}
-      </div>
-
-      {/* Posts grid */}
-      {filtered.length > 0 ? (
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filtered.map((post) => (
-            <BlogCard key={post.slug} post={post} />
-          ))}
-        </div>
-      ) : (
-        <div className="text-center py-20">
-          <p className="text-gray-400 text-lg">No articles found in this category yet.</p>
-          <a href="/blog" className="text-green-700 font-semibold hover:underline mt-2 inline-block">
-            View all articles →
-          </a>
-        </div>
-      )}
+      <BlogList posts={posts} />
     </div>
   )
 }
