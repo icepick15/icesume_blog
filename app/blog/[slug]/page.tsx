@@ -110,7 +110,7 @@ export default async function PostPage({ params }: PostPageProps) {
           </div>
 
           {/* Share Buttons */}
-          <ShareButtons title={post.title} />
+          <ShareButtons title={post.title} url={`https://icesume.com.ng/blog/${post.slug}`} />
 
           {/* Author Bio */}
           <div className="mt-10 bg-green-50 rounded-xl border border-green-100 p-6">

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link2, Check, Share2 } from 'lucide-react'
 
 interface ShareButtonsProps {
@@ -42,8 +42,12 @@ function FacebookIcon() {
 
 export default function ShareButtons({ title, url }: ShareButtonsProps) {
   const [copied, setCopied] = useState(false)
+  const [shareUrl, setShareUrl] = useState(url ?? '')
 
-  const shareUrl = url ?? (typeof window !== 'undefined' ? window.location.href : '')
+  useEffect(() => {
+    if (!url) setShareUrl(window.location.href)
+  }, [url])
+
   const encodedUrl = encodeURIComponent(shareUrl)
   const encodedTitle = encodeURIComponent(title)
 
