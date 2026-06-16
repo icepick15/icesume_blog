@@ -86,14 +86,25 @@ export default async function PostPage({ params }: PostPageProps) {
           </div>
 
           {/* MDX Content */}
-          <div className="prose prose-gray prose-lg max-w-none
-            prose-headings:font-bold prose-headings:text-gray-900
-            prose-a:text-green-700 prose-a:no-underline hover:prose-a:underline
-            prose-strong:text-gray-900
-            prose-code:bg-gray-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm
-            prose-blockquote:border-green-500 prose-blockquote:bg-green-50 prose-blockquote:py-1 prose-blockquote:rounded-r-lg
-            prose-table:text-sm
-            prose-th:bg-gray-50 prose-th:text-gray-700
+          <div className="
+            prose prose-gray prose-lg max-w-none
+            prose-headings:font-bold prose-headings:text-gray-900 prose-headings:scroll-mt-24
+            prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:border-b prose-h2:border-gray-100 prose-h2:pb-2
+            prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
+            prose-p:text-gray-700 prose-p:leading-relaxed
+            prose-a:text-green-700 prose-a:font-medium prose-a:no-underline hover:prose-a:underline
+            prose-strong:text-gray-900 prose-strong:font-semibold
+            prose-ul:my-4 prose-li:my-1 prose-li:text-gray-700
+            prose-ol:my-4
+            prose-hr:border-gray-200 prose-hr:my-8
+            prose-blockquote:border-l-4 prose-blockquote:border-green-500 prose-blockquote:bg-green-50 prose-blockquote:rounded-r-xl prose-blockquote:px-5 prose-blockquote:py-3 prose-blockquote:not-italic prose-blockquote:text-gray-700
+            prose-code:bg-gray-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:font-mono prose-code:text-gray-800 prose-code:before:content-none prose-code:after:content-none
+            prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:rounded-xl prose-pre:overflow-x-auto
+            prose-table:text-sm prose-table:w-full
+            prose-thead:bg-gray-50
+            prose-th:px-4 prose-th:py-3 prose-th:text-left prose-th:font-semibold prose-th:text-gray-700 prose-th:border-b prose-th:border-gray-200
+            prose-td:px-4 prose-td:py-3 prose-td:border-b prose-td:border-gray-100 prose-td:text-gray-700
+            prose-img:rounded-xl prose-img:shadow-sm
           ">
             <MDXRemote source={post.content} />
           </div>
