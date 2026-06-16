@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
+import { getAllAuthors } from '@/lib/authors'
 
 export const metadata: Metadata = {
   title: 'About Us',
@@ -6,6 +8,7 @@ export const metadata: Metadata = {
 }
 
 export default function AboutPage() {
+  const authors = getAllAuthors()
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
       {/* Header */}
@@ -89,22 +92,33 @@ export default function AboutPage() {
 
       {/* Team */}
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">Our Team</h2>
-        <div className="bg-white rounded-xl border border-gray-100 p-6">
-          <div className="flex items-start gap-4">
-            <div className="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center text-green-700 font-bold text-xl flex-shrink-0">
-              iC
-            </div>
-            <div>
-              <h3 className="font-bold text-gray-900">iCesume Editorial Team</h3>
-              <p className="text-sm text-green-700 mb-2">Career & Finance Writers, Nigeria</p>
-              <p className="text-sm text-gray-500 leading-relaxed">
-                Our editorial team consists of Nigerian career professionals, finance practitioners,
-                and journalists with combined experience across Lagos, Abuja, and Port Harcourt
-                across industries including banking, technology, oil & gas, and education.
-              </p>
-            </div>
-          </div>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Meet the Team</h2>
+        <div className="grid sm:grid-cols-2 gap-5">
+          {authors.map((author) => (
+            <Link
+              key={author.slug}
+              href={`/authors/${author.slug}`}
+              className="bg-white rounded-xl border border-gray-100 p-6 hover:shadow-md transition-shadow block"
+            >
+              <div className="flex items-start gap-4">
+                <div className="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center text-green-700 font-bold text-lg flex-shrink-0">
+                  {author.initial}
+                </div>
+                <div className="min-w-0">
+                  <h3 className="font-bold text-gray-900">{author.name}</h3>
+                  <p className="text-sm text-green-700 mb-2">{author.role}</p>
+                  <p className="text-sm text-gray-500 leading-relaxed">{author.shortBio}</p>
+                  <div className="flex flex-wrap gap-1.5 mt-3">
+                    {author.expertise.slice(0, 2).map((tag) => (
+                      <span key={tag} className="text-xs px-2 py-0.5 rounded-full bg-green-50 text-green-700 border border-green-100">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </Link>
+          ))}
         </div>
       </section>
 

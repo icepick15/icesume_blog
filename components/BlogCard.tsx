@@ -61,7 +61,12 @@ export default function BlogCard({ post, featured = false }: BlogCardProps) {
             <Clock size={12} />
             {post.readingTime} min read
           </span>
-          <span className="font-medium text-gray-600">{post.author}</span>
+          <Link
+            href={`/authors/${post.authorSlug}`}
+            className="font-medium text-gray-600 hover:text-green-700 transition-colors"
+          >
+            {post.author}
+          </Link>
         </div>
       </div>
     </article>

@@ -10,6 +10,7 @@ export interface PostMeta {
   excerpt: string
   date: string
   author: string
+  authorSlug: string
   authorBio: string
   category: string
   tags: string[]
@@ -44,8 +45,9 @@ export function getAllPosts(): PostMeta[] {
         title: data.title ?? '',
         excerpt: data.excerpt ?? '',
         date: data.date ?? '',
-        author: data.author ?? 'iCesume Editorial',
-        authorBio: data.authorBio ?? 'Career and finance expert focused on Nigerian professionals.',
+        author: data.author ?? 'Ajibade Akinola',
+        authorSlug: data.authorSlug ?? 'ajibade-akinola',
+        authorBio: data.authorBio ?? 'Founder of iCesume. Tech professional and career development advocate based in Lagos, Nigeria.',
         category: data.category ?? 'General',
         tags: data.tags ?? [],
         readingTime: estimateReadingTime(content),
@@ -77,8 +79,9 @@ export function getPostBySlug(slug: string): Post | null {
     title: data.title ?? '',
     excerpt: data.excerpt ?? '',
     date: data.date ?? '',
-    author: data.author ?? 'iCesume Editorial',
-    authorBio: data.authorBio ?? 'Career and finance expert focused on Nigerian professionals.',
+    author: data.author ?? 'Ajibade Akinola',
+    authorSlug: data.authorSlug ?? 'ajibade-akinola',
+    authorBio: data.authorBio ?? 'Founder of iCesume. Tech professional and career development advocate based in Lagos, Nigeria.',
     category: data.category ?? 'General',
     tags: data.tags ?? [],
     readingTime: estimateReadingTime(content),

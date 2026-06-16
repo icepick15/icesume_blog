@@ -82,7 +82,9 @@ export default async function PostPage({ params }: PostPageProps) {
               <Clock size={14} />
               {post.readingTime} min read
             </span>
-            <span className="font-medium text-gray-600">By {post.author}</span>
+            <Link href={`/authors/${post.authorSlug}`} className="font-medium text-gray-600 hover:text-green-700 transition-colors">
+              By {post.author}
+            </Link>
           </div>
 
           {/* MDX Content */}
@@ -116,11 +118,16 @@ export default async function PostPage({ params }: PostPageProps) {
           <div className="mt-10 bg-green-50 rounded-xl border border-green-100 p-6">
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-full bg-green-200 flex items-center justify-center text-green-800 font-bold flex-shrink-0">
-                {post.author.charAt(0)}
+                {post.author.split(' ').map((n) => n[0]).join('')}
               </div>
               <div>
-                <p className="font-bold text-gray-900">{post.author}</p>
-                <p className="text-sm text-green-700 mb-2">iCesume Editorial</p>
+                <Link
+                  href={`/authors/${post.authorSlug}`}
+                  className="font-bold text-gray-900 hover:text-green-700 transition-colors"
+                >
+                  {post.author}
+                </Link>
+                <p className="text-sm text-green-700 mb-2">iCesume</p>
                 <p className="text-sm text-gray-600 leading-relaxed">{post.authorBio}</p>
               </div>
             </div>
