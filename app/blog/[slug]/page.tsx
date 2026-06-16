@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { MDXRemote } from 'next-mdx-remote/rsc'
+import remarkGfm from 'remark-gfm'
 import { getAllPosts, getPostBySlug } from '@/lib/blog'
 import { Calendar, Clock, ArrowLeft, Tag } from 'lucide-react'
 import ShareButtons from '@/components/ShareButtons'
@@ -104,7 +105,10 @@ export default async function PostPage({ params }: PostPageProps) {
             prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:rounded-xl prose-pre:overflow-x-auto
             prose-img:rounded-xl prose-img:shadow-sm
           ">
-            <MDXRemote source={post.content} />
+            <MDXRemote
+              source={post.content}
+              options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
+            />
           </div>
 
           {/* Share Buttons */}
