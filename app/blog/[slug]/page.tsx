@@ -19,15 +19,34 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
   const { slug } = await params
   const post = getPostBySlug(slug)
   if (!post) return {}
+  const url = `https://icesume.com.ng/blog/${post.slug}`
   return {
     title: post.title,
     description: post.excerpt,
+    keywords: post.tags,
     authors: [{ name: post.author }],
+    alternates: { canonical: url },
     openGraph: {
       title: post.title,
       description: post.excerpt,
       type: 'article',
+      url,
       publishedTime: post.date,
+      authors: [post.author],
+      tags: post.tags,
+      images: [
+        {
+          url: '/icesume-favicon-512.png',
+          width: 512,
+          height: 512,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt,
     },
   }
 }
@@ -38,6 +57,34 @@ export default async function PostPage({ params }: PostPageProps) {
 
   if (!post) notFound()
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    dateModified: post.date,
+    url: `https://icesume.com.ng/blog/${post.slug}`,
+    mainEntityOfPage: `https://icesume.com.ng/blog/${post.slug}`,
+    author: {
+      '@type': 'Person',
+      name: post.author,
+      url: `https://icesume.com.ng/authors/${post.authorSlug}`,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'iCesume',
+      url: 'https://icesume.com.ng',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://icesume.com.ng/icesume-favicon-512.png',
+      },
+    },
+    keywords: post.tags.join(', '),
+    articleSection: post.category,
+    inLanguage: 'en-NG',
+  }
+
   const allPosts = getAllPosts()
   const related = allPosts
     .filter((p) => p.slug !== post.slug && p.category === post.category)
@@ -45,6 +92,10 @@ export default async function PostPage({ params }: PostPageProps) {
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="flex gap-10">
         {/* Main content */}
         <article className="flex-1 min-w-0">
