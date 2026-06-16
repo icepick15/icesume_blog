@@ -25,3 +25,63 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* ── Blog prose table styling ── */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05);
+}
+
+.prose thead {
+  background-color: #f9fafb;
+}
+
+.prose th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 2px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.prose td {
+  padding: 0.75rem 1rem;
+  color: #4b5563;
+  border-bottom: 1px solid #f3f4f6;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.prose tr:last-child td {
+  border-bottom: none;
+}
+
+.prose tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+/* First column bold in comparison tables */
+.prose td:first-child {
+  font-weight: 500;
+  color: #111827;
+}
+
+/* Scrollable wrapper for tables on mobile */
+.prose table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (min-width: 640px) {
+  .prose table {
+    display: table;
+    overflow-x: visible;
+  }
+}
