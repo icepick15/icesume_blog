@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Terms of Service',
   description: 'iCesume Terms of Service — the rules and conditions for using icesume.com.ng.',
+  alternates: { canonical: '/terms/' },
 }
 
 export default function TermsPage() {

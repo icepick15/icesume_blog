@@ -4,6 +4,7 @@ import SalaryCalculator from '@/components/SalaryCalculator'
 export const metadata: Metadata = {
   title: 'Nigerian Salary Calculator 2026 — Calculate Your Take-Home Pay',
   description: 'Calculate your exact take-home pay after PAYE tax, pension (PFA), and NHF deductions. Built specifically for Nigerian employees in 2026.',
+  alternates: { canonical: '/salary-calculator/' },
 }
 
 export default function SalaryCalculatorPage() {

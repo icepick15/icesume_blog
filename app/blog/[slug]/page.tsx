@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
   const { slug } = await params
   const post = getPostBySlug(slug)
   if (!post) return {}
-  const url = `https://icesume.com.ng/blog/${post.slug}`
+  const url = `https://icesume.com.ng/blog/${post.slug}/`
   return {
     title: post.title,
     description: post.excerpt,
@@ -64,12 +64,12 @@ export default async function PostPage({ params }: PostPageProps) {
     description: post.excerpt,
     datePublished: post.date,
     dateModified: post.date,
-    url: `https://icesume.com.ng/blog/${post.slug}`,
-    mainEntityOfPage: `https://icesume.com.ng/blog/${post.slug}`,
+    url: `https://icesume.com.ng/blog/${post.slug}/`,
+    mainEntityOfPage: `https://icesume.com.ng/blog/${post.slug}/`,
     author: {
       '@type': 'Person',
       name: post.author,
-      url: `https://icesume.com.ng/authors/${post.authorSlug}`,
+      url: `https://icesume.com.ng/authors/${post.authorSlug}/`,
     },
     publisher: {
       '@type': 'Organization',
@@ -163,7 +163,7 @@ export default async function PostPage({ params }: PostPageProps) {
           </div>
 
           {/* Share Buttons */}
-          <ShareButtons title={post.title} url={`https://icesume.com.ng/blog/${post.slug}`} />
+          <ShareButtons title={post.title} url={`https://icesume.com.ng/blog/${post.slug}/`} />
 
           {/* Author Bio */}
           <div className="mt-10 bg-green-50 rounded-xl border border-green-100 p-6">

@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: AuthorPageProps): Promise<Met
   return {
     title: `${author.name} — ${author.role}`,
     description: author.shortBio,
+    alternates: { canonical: `/authors/${author.slug}/` },
   }
 }
 

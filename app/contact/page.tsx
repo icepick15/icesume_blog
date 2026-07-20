@@ -5,6 +5,7 @@ import ContactForm from '@/components/ContactForm'
 export const metadata: Metadata = {
   title: 'Contact Us',
   description: "Get in touch with the iCesume team. We'd love to hear from you — questions, suggestions, corrections, or partnership inquiries.",
+  alternates: { canonical: '/contact/' },
 }
 
 export default function ContactPage() {

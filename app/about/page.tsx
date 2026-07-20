@@ -5,6 +5,7 @@ import { getAllAuthors } from '@/lib/authors'
 export const metadata: Metadata = {
   title: 'About Us',
   description: 'Learn about iCesume — Nigeria\'s career and personal finance resource hub. Our mission, team, and why we built this platform.',
+  alternates: { canonical: '/about/' },
 }
 
 export default function AboutPage() {

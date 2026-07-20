@@ -5,6 +5,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Job Resources for Nigerians 2026 — Platforms, CV Templates & Tools',
   description: 'Curated job platforms, CV resources, and career tools for Nigerian job seekers in 2026. Find local and remote opportunities, write a winning CV, and land your next role.',
+  alternates: { canonical: '/job-resources/' },
 }
 
 const jobPlatforms = [

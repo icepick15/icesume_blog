@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Disclaimer',
   description: 'iCesume disclaimer — important information about the nature of content on this site including career and financial information.',
+  alternates: { canonical: '/disclaimer/' },
 }
 
 export default function DisclaimerPage() {

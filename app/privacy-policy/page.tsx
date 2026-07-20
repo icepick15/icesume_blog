@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description: 'iCesume Privacy Policy — how we collect, use, and protect your personal data in compliance with NDPR and GDPR.',
+  alternates: { canonical: '/privacy-policy/' },
 }
 
 export default function PrivacyPolicyPage() {

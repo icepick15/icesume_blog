@@ -1,7 +1,12 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getAllPosts } from '@/lib/blog'
 import BlogCard from '@/components/BlogCard'
 import { Calculator, GraduationCap, Briefcase, TrendingUp, Users, BookOpen } from 'lucide-react'
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/' },
+}
 
 export default function HomePage() {
   const posts = getAllPosts().slice(0, 6)

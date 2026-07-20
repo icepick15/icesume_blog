@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Blog — Career & Finance Articles for Nigerians',
   description:
     'Expert articles on career development, personal finance, scholarships, and remote work — written specifically for Nigerians and Africans.',
+  alternates: { canonical: '/blog/' },
 }
 
 export default function BlogPage() {

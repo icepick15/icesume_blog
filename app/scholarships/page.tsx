@@ -4,6 +4,7 @@ import { GraduationCap, ExternalLink, Calendar } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Scholarships for Nigerians 2026 — Fully Funded & Partial',
   description: 'Comprehensive database of scholarships open to Nigerian students in 2026. Fully funded, partial, undergraduate, postgraduate, and professional scholarships.',
+  alternates: { canonical: '/scholarships/' },
 }
 
 const scholarships = [

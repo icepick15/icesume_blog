@@ -61,7 +61,7 @@ const websiteJsonLd = {
   inLanguage: 'en-NG',
   potentialAction: {
     '@type': 'SearchAction',
-    target: 'https://icesume.com.ng/blog?q={search_term_string}',
+    target: 'https://icesume.com.ng/blog/?q={search_term_string}',
     'query-input': 'required name=search_term_string',
   },
 }
