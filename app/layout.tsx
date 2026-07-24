@@ -1,8 +1,6 @@
 import type { Metadata } from 'next'
 import { Geist } from 'next/font/google'
 import './globals.css'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 const geist = Geist({ subsets: ['latin'], variable: '--font-geist' })
 
@@ -92,9 +90,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <main className="flex-1 flex flex-col">{children}</main>
       </body>
     </html>
   )
