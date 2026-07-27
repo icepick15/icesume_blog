@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
-import ScholarshipPicker from '@/components/ScholarshipPicker'
+import ScholarshipCta from '@/components/ScholarshipCta'
 
 export const metadata: Metadata = {
   title: 'Pick Your Country. Start Your Scholarship.',
@@ -60,111 +60,53 @@ const css = `
     max-width:340px;
     margin:0 auto 22px;
   }
-  .scholarship-landing .stat-row{
-    display:flex;
-    justify-content:center;
-    gap:22px;
-    font-family:'Courier New', monospace;
-    font-size:11px;
-    letter-spacing:0.5px;
-    color:var(--ink);
-    border-top:1px dashed var(--line);
-    border-bottom:1px dashed var(--line);
-    padding:10px 0;
-  }
-  .scholarship-landing .stat-row b{display:block; font-size:16px; font-family:Georgia, serif;}
-
-  .scholarship-landing .picker{padding:32px 20px 8px;}
-  .scholarship-landing .picker h2{
-    font-size:14px;
-    text-transform:uppercase;
-    letter-spacing:2px;
-    text-align:center;
-    color:rgba(15,27,43,0.55);
+  .scholarship-landing .flag-strip{
+    font-size:26px;
+    letter-spacing:8px;
     margin-bottom:18px;
-    font-family:'Courier New', monospace;
   }
-  .scholarship-landing .countries{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px;
-  }
-  .scholarship-landing .country-btn{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    padding:16px 14px;
-    background:var(--paper);
-    border:2px solid var(--ink);
-    border-radius:2px;
-    font-family:Georgia, serif;
-    font-size:15px;
-    font-weight:700;
-    color:var(--ink);
-    cursor:pointer;
-    text-align:left;
-    transition:transform 0.12s ease, background 0.12s ease;
+
+  .scholarship-landing .stamp-btn{
     position:relative;
-  }
-  .scholarship-landing .country-btn .flag{font-size:20px;}
-  .scholarship-landing .country-btn:active{transform:scale(0.97);}
-  .scholarship-landing .country-btn.selected{
-    background:var(--ink);
-    color:var(--paper);
-  }
-  .scholarship-landing .country-btn.selected::after{
-    content:"\\2713 STAMPED";
-    position:absolute;
-    bottom:-9px;
-    right:8px;
-    font-family:'Courier New', monospace;
-    font-size:9px;
-    letter-spacing:1px;
-    background:var(--stamp);
-    color:#fff;
-    padding:2px 6px;
-    transform:rotate(-4deg);
-  }
-
-  .scholarship-landing .form-section{
-    padding:36px 20px 20px;
-    display:none;
-  }
-  .scholarship-landing .form-section.active{display:block;}
-  .scholarship-landing .form-section h3{
-    font-size:18px;
-    text-align:center;
-    margin-bottom:6px;
-  }
-  .scholarship-landing .form-section .picked{
-    text-align:center;
-    font-family:'Courier New', monospace;
-    font-size:12px;
-    color:var(--stamp-ink);
-    margin-bottom:20px;
-  }
-
-  .scholarship-landing .cta-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
     width:100%;
-    padding:17px;
+    max-width:340px;
+    padding:22px 24px;
+    margin-top:8px;
     background:var(--stamp);
     color:#fff;
-    border:none;
-    border-radius:2px;
-    font-family:Georgia, serif;
+    border:3px solid var(--ink);
+    border-radius:3px;
+    font-family:'Courier New', monospace;
     font-size:16px;
     font-weight:700;
-    letter-spacing:0.3px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
     cursor:pointer;
-    margin-top:6px;
-    transition:background 0.15s ease;
+    box-shadow:5px 5px 0 var(--ink);
+    transition:transform 0.08s ease, box-shadow 0.08s ease;
   }
-  .scholarship-landing .cta-btn:active{background:var(--stamp-ink);}
+  .scholarship-landing .stamp-btn:active{
+    transform:translate(5px, 5px);
+    box-shadow:0 0 0 var(--ink);
+  }
+  .scholarship-landing .stamp-btn-arrow{font-size:20px;}
+  .scholarship-landing .stamp-btn.stamped{
+    animation:scholarshipStampPress 0.25s ease;
+  }
+  @keyframes scholarshipStampPress{
+    0%{transform:scale(1) rotate(0deg);}
+    40%{transform:scale(0.92) rotate(-2deg);}
+    100%{transform:scale(1) rotate(0deg);}
+  }
   .scholarship-landing .fine-print{
     text-align:center;
     font-size:11px;
     color:rgba(15,27,43,0.5);
-    margin-top:10px;
+    margin-top:12px;
     font-family:'Courier New', monospace;
   }
 
@@ -204,29 +146,18 @@ export default function ScholarshipLandingPage() {
 
       <div className="hero">
         <div className="wrap">
-          <div className="eyebrow">Fully Funded · No Application Fee</div>
+          <div className="eyebrow">Fully Funded · No IELTS Required</div>
+          <div className="flag-strip">🇺🇸 🇨🇦 🇬🇧 🇩🇪</div>
           <h1>
             Your dream country is one <em>stamp</em> away.
           </h1>
           <p className="sub">
-            Watch the video. Pick where you want to study. We&apos;ll send you the exact
-            scholarships open right now.
+            10 fully funded scholarships open right now for Nigerians. No agents. No hidden fees.
           </p>
-          <div className="stat-row">
-            <div>
-              <b>2,400+</b>students placed
-            </div>
-            <div>
-              <b>18</b>countries
-            </div>
-            <div>
-              <b>0</b>application fee
-            </div>
-          </div>
+
+          <ScholarshipCta />
         </div>
       </div>
-
-      <ScholarshipPicker />
 
       <footer>
         <div className="wrap">SCHOLARSHIP DESK · NO AGENTS · NO HIDDEN FEES</div>
