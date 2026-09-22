@@ -139,7 +139,7 @@ export default function Page() {
         justifyContent: "center",
       }}
     >
-      <ReteraqAgeGate>
+      <ReteraqAgeGate largeScreenRedirectUrl="https://icesume.com.ng/">
         <div style={{ width: "100%", maxWidth: 420 }}>
           <header
             style={{

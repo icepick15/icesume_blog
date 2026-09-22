@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-const DESTINATION_URL = 'https://kikio.ng/abroad/fruit-picker-jobs-in-canada-with-free-visa-sponsorship/'
+const DESTINATION_URL = 'https://xplorer.ng/abroad/fruit-picker-jobs-in-canada-with-free-visa-sponsorship/'
 
 export default function JobsCta() {
   const [stamped, setStamped] = useState(false)

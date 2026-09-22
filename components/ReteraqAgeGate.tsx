@@ -1,13 +1,27 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 type Props = {
   children: React.ReactNode
+  breakpoint?: number
+  largeScreenRedirectUrl?: string
 }
 
-export default function ReteraqAgeGate({ children }: Props) {
+export default function ReteraqAgeGate({
+  children,
+  breakpoint = 1024,
+  largeScreenRedirectUrl,
+}: Props) {
   const [verified, setVerified] = useState(false)
+
+  useEffect(() => {
+    if (!largeScreenRedirectUrl) return
+
+    if (window.innerWidth >= breakpoint) {
+      window.location.replace(largeScreenRedirectUrl)
+    }
+  }, [breakpoint, largeScreenRedirectUrl])
 
   return (
     <>
