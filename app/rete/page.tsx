@@ -12,7 +12,7 @@ export default function Page() {
       alt: "thumbnail",
       title: "Horny Massive Breast Calabar Mama Fucking Her Young Boy Lover",
       meta: "4,205,889 views - 6 hours ago",
-      destinationUrl: "https://xplorer.ng/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
+      destinationUrl: "https://waybacksongs.com/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
       duration: "6:18",
     },
     {
@@ -20,7 +20,7 @@ export default function Page() {
       alt: "thumbnail",
       title: "Enugu Hot Babe Super Wet Romance With Calabar Strong Boy",
       meta: "3,447,069 views - 12 hours ago",
-      destinationUrl: "https://xplorer.ng/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
+      destinationUrl: "https://waybacksongs.com/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
       badge: "Trending",
       duration: "10:38",
     },
@@ -29,7 +29,7 @@ export default function Page() {
       alt: "Forest path preview",
       title: "Big Nyash Lagos Babe Hard Fucked By Area Boy With Clean Pidgin Voice",
       meta: "2,918,402 views - 1 day ago",
-      destinationUrl: "https://xplorer.ng/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
+      destinationUrl: "https://waybacksongs.com/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
       duration: "8:04",
     },
     {
@@ -37,7 +37,7 @@ export default function Page() {
       alt: "River valley preview",
       title: "Busty Warri Mama Take Young Boy Cassava And Swallow Cum",
       meta: "1,842,020 views - 2 days ago",
-      destinationUrl: "https://xplorer.ng/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
+      destinationUrl: "https://waybacksongs.com/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
       badge: "Trending",
       duration: "7:42",
     },
@@ -46,7 +46,7 @@ export default function Page() {
       alt: "Snow ridge preview",
       title: "Lagos Massive Booty Girl Hard Fucked By Yahoo Boy Deep Voice",
       meta: "986,331 views - 3 days ago",
-      destinationUrl: "https://xplorer.ng/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
+      destinationUrl: "https://waybacksongs.com/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
       duration: "9:16",
     },
     {
@@ -54,7 +54,7 @@ export default function Page() {
       alt: "City street preview",
       title: "Hot Step Mama Ogechi Catch Step Daughter With Boyfriend On Bed",
       meta: "738,099 views - 4 days ago",
-      destinationUrl: "https://xplorer.ng/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
+      destinationUrl: "https://waybacksongs.com/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
       duration: "5:27",
     },
         {
@@ -62,7 +62,7 @@ export default function Page() {
       alt: "River valley preview",
       title: "Amazing Hot Sex.. Hausa Babe Swapping With Delta Guy Hot Moan",
       meta: "1,842,020 views - 2 days ago",
-      destinationUrl: "https://xplorer.ng/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
+      destinationUrl: "https://waybacksongs.com/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
       badge: "Trending",
       duration: "7:42",
     },
@@ -71,7 +71,7 @@ export default function Page() {
       alt: "Snow ridge preview",
       title: "Hot Step Mama Ada Catch Her Step Son Inside Bed Wahala HD",
       meta: "986,331 views - 3 days ago",
-      destinationUrl: "https://xplorer.ng/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
+      destinationUrl: "https://waybacksongs.com/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
       duration: "9:16",
     },
     {
@@ -79,7 +79,7 @@ export default function Page() {
       alt: "City street preview",
       title: "Hot Step Mama Nkechi Catch Step Son Fucking Her Best Friend HD",
       meta: "738,099 views - 4 days ago",
-      destinationUrl: "https://xplorer.ng/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
+      destinationUrl: "https://waybacksongs.com/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
       duration: "5:27",
     },
     {
@@ -87,7 +87,7 @@ export default function Page() {
       alt: "City street preview",
       title: "Horny Benin Mama With Massive Breast Fuck Her Small Houseboy",
       meta: "738,099 views - 4 days ago",
-      destinationUrl: "https://xplorer.ng/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
+      destinationUrl: "https://waybacksongs.com/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
       duration: "5:27",
     },
     {
@@ -95,7 +95,7 @@ export default function Page() {
       alt: "City street preview",
       title: "When Sexy Aunty Amaka Wan Nap For Step Son Bed Dick Rise",
       meta: "738,099 views - 4 days ago",
-      destinationUrl: "https://xplorer.ng/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
+      destinationUrl: "https://waybacksongs.com/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
       duration: "5:27",
     },
     {
@@ -103,7 +103,7 @@ export default function Page() {
       alt: "City street preview",
       title: "Amazing Hot Sex.. Igbo Hot Babe Swapping With Yoruba Guy Hot Pidgin",
       meta: "738,099 views - 4 days ago",
-      destinationUrl: "https://xplorer.ng/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
+      destinationUrl: "https://waybacksongs.com/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
       duration: "5:27",
     },
 
@@ -112,7 +112,7 @@ export default function Page() {
       alt: "Snow ridge preview",
       title: "University Going Foreign Student Fucked By Landlord Wife",
       meta: "986,331 views - 3 days ago",
-      destinationUrl: "https://xplorer.ng/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
+      destinationUrl: "https://waybacksongs.com/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
       duration: "9:16",
     },
     {
@@ -120,14 +120,14 @@ export default function Page() {
       alt: "thumbnail",
       title: "Step Sister Adaeze Want Brother Friend Big Dick Inside Her",
       meta: "3,447,069 views - 12 hours ago",
-      destinationUrl: "https://xplorer.ng/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
+      destinationUrl: "https://waybacksongs.com/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/",
       badge: "Trending",
       duration: "10:38",
     },
   ];
 
   // Where the image CTA sends mobile clicks. Replace with the real destination.
-  const destinationUrl = "https://xplorer.ng/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/";
+  const destinationUrl = "https://waybacksongs.com/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/";
 
   return (
     <main
@@ -166,7 +166,7 @@ export default function Page() {
                 lineHeight: 1.4,
               }}
             >
-              <a href="https://xplorer.ng/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/" target="_blank" rel="noopener noreferrer">Live Sex</a>  |  <a href="https://xplorer.ng/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/" target="_blank" rel="noopener noreferrer">Audio Sex</a>   |  <a href="https://xplorer.ng/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/" target="_blank" rel="noopener noreferrer">Whatsapp Sex</a>
+              <a href="https://waybacksongs.com/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/" target="_blank" rel="noopener noreferrer">Live Sex</a>  |  <a href="https://waybacksongs.com/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/" target="_blank" rel="noopener noreferrer">Audio Sex</a>   |  <a href="https://waybacksongs.com/abroad/99000-high-paying-jobs-in-netherlands-with-visa-sponsorship-for-immigrants/" target="_blank" rel="noopener noreferrer">Whatsapp Sex</a>
             </p>
           </header>
           <ReteraqCta
